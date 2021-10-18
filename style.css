@@ -73,12 +73,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 64px;
 }
 
 .information span  {
     font-size: 36px;
     font-weight: 800;
     color: #1f2937;
+    margin: 32px 0px;
 }
 
 .information .sections {
@@ -101,4 +103,28 @@ body {
     align-items: center;
     gap: 8px;
     text-align: center;
+}
+
+.quote {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-weight: 300;
+    padding: 64px;
+    color: #1f2937;
+}
+
+.call {
+    padding: 64px;
+}
+
+.to-action {
+    background-color: #3882f6;
+    color: #e5e7eb;
+    padding: 32px;
+    border-radius: 8px;
+}
+
+.to-action span {
+    display: block;
+    font-weight: 600;
 }
