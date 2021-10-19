@@ -1,6 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
+    margin: 0px;
 }
 
 .blue-background {
@@ -86,26 +87,31 @@ body {
 .information .sections {
     display: flex;
     justify-content: center;
+    gap: 64px;
 }
 
 .information-image {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-color: #3882f6;
     border-radius: 15px;
     border-style: solid;
     border-width: 3px;
 }
 
-.information-section {
+.information .sections .information-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 120px;
     gap: 8px;
     text-align: center;
 }
 
 .quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #e5e7eb;
     font-size: 36px;
     font-weight: 300;
@@ -113,18 +119,43 @@ body {
     color: #1f2937;
 }
 
+.quote span {
+    width: 700px;
+    text-align: justify;
+}
+
+.quote .author {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: end;
+}
+
+
 .call {
     padding: 64px;
+    display: flex;
+    justify-content: center;
 }
 
 .to-action {
+    display: flex;
+    justify-content: space-between;
     background-color: #3882f6;
     color: #e5e7eb;
-    padding: 32px;
+    padding: 32px 64px;
     border-radius: 8px;
+    width: 850px;
 }
 
-.to-action span {
+.to-action strong {
     display: block;
     font-weight: 600;
+}
+
+.to-action button {
+    background-color: #3882f6;
+    border: 2px solid #f9faf8 ;
+    color: #f9faf8;
+    width: 100px;
+    border-radius: 5px;
 }
